@@ -154,7 +154,7 @@ Let $G$ be the Galois group of $f(x)=0$ over $K$ and let $G'$ be a normal subgro
 >**Example**
 >Take $f(x)=x^3-2$ over $K=\mathbb{Q}(\omega)$ where $\omega$ is a primitive cube root of unity: $\omega^3=1$, $\omega \ne 1$.
 >The roots are $a=\sqrt[3]{2}, b=\omega \sqrt[3]{2}, c= \omega^2\sqrt[3]{2}$.
->Over $K=\mathbb{Q}(\omega)$, the Galois group has three elements: $G=\left\{1, \sigma, \sigma^2 \right\}$, where, for example, $\sigma(a)=b \sigma(b)=c, \sigma(c)=a$
+>Over $K=\mathbb{Q}(\omega)$, the Galois group has three elements: $G=\lbrace1, \sigma, \sigma^2 \rbrace$, where, for example, $\sigma(a)=b \sigma(b)=c, \sigma(c)=a$
 >So $\vert G \vert = 3$.
 >Now consider the subgroup $G'=\left\{1 \right\}$.
 >This is a normal subgroup of $G$, and $[G:G'] = \frac{3}{1}=3$.
