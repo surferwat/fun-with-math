@@ -156,7 +156,7 @@ Let $G$ be the Galois group of $f(x)=0$ over $K$ and let $G'$ be a normal subgro
 >The roots are $a=\sqrt[3]{2}, b=\omega \sqrt[3]{2}, c= \omega^2\sqrt[3]{2}$.
 >Over $K=\mathbb{Q}(\omega)$, the Galois group has three elements: $G=\lbrace1, \sigma, \sigma^2 \rbrace$, where, for example, $\sigma(a)=b \sigma(b)=c, \sigma(c)=a$
 >So $\vert G \vert = 3$.
->Now consider the subgroup $G'=\left\{1 \right\}$.
+>Now consider the subgroup $G'=\lbrace 1 \rbrace$.
 >This is a normal subgroup of $G$, and $[G:G'] = \frac{3}{1}=3$.
 >Thus $G'$ has prime index $p=3$ in $G$.
 >Also, our field $K=\mathbb{Q}(\omega)$ already contains a primitive cube root of unity, so all the conditions of the proposition are satisfied.
@@ -167,7 +167,7 @@ Let $G$ be the Galois group of $f(x)=0$ over $K$ and let $G'$ be a normal subgro
 >Therefore all three roots are already in $K'$.
 >Consequently, every automorphism fixing $K'$ must fix $a,b,c$.
 >There are no nontrivial permutations left.
->Hence $\mathrm{Gal}(f/K')=\left\{1\right\}=G'$.
+>Hence $\mathrm{Gal}(f/K')=\lbrace1\rbrace=G'$.
 
 #### Theorem
 Let $f(x)=0$ be an equation with distinct roots whose Galois group $G$ over the field $K$ is solvable, that is, has a sequence of subgroups $G \supset G_1 \supset G_2 \supset \dots \supset G_v$ in which each $G_i$ is a normal subgroup of prime index in its predecessor and $G_v$ contains the identity substitutions alone. Then $f(x)=0$ can be solved by radicals, that is, one can construct a sequence of field extensions $K \subset K' \subset K'' \subset \dots \subset K^{(\mu)}$ such that $f(x)=0$ has $n=\mathrm{deg} f$ roots in $K^{(\mu)}$ and such that the elements of any $K^{(i)}$ can be expressed rationally in terms of elements of its predecessor and a fixed radical of a fixed element of its predecessor - in fact the elements can be expressed as polynomials in the radical with coefficients in $K^{(i-1)}$.
@@ -182,8 +182,8 @@ Let $f(x)=0$ be an equation with distinct roots whose Galois group $G$ over the 
 >Step 1: Identify the Galois group
 >Over $\mathbb{Q}(\omega)$, the Galois group consists of the three cyclic permutations $1, \sigma, \sigma^2$, where $\sigma(a)=b, \sigma(b)=c, \sigma(c)=a$.
 >Thus $\vert G \vert = 3$. 
->Since $3$ is prime, we have the subgroup chain $G \supset \left\{1\right\}$.
->The subgroup $\left\{1\right\}$ is normal in $G$, and $[G:\left\{1\right\}]=3$.
+>Since $3$ is prime, we have the subgroup chain $G \supset \lbrace 1\rbrace$.
+>The subgroup $\lbrace 1\rbrace$ is normal in $G$, and $[G:\lbrace1\rbrace]=3$.
 >So the Galois group is solvable.
 >Step 2: Use the subgroup chain
 >The theorem tells us that, because the index is the prime $3$ and $K$ contains a primitive cube root of unity, we can enlarge $K$ by adjoining a cube root of some element of $K$.
@@ -194,7 +194,7 @@ Let $f(x)=0$ be an equation with distinct roots whose Galois group $G$ over the 
 >But we also have $\omega \in K'$, so we automatically get $b=\omega \sqrt[3]{2}$ and $c = \omega^2 \sqrt[3]{2}$.
 >Therefore $a,b,c \in K'$.
 >So all three roots of the polynomial are now in the field.
->The Galois group has consequently collapsed to $\mathrm{Gal}(f/K')=\left\{1\right\}$.
+>The Galois group has consequently collapsed to $\mathrm{Gal}(f/K')=\lbrace1\rbrace$.
 >The entire problem has been solved by adjoining a single radical.
 
 #### Lemma on Subgroups and Intersections
@@ -218,13 +218,13 @@ If $G_i$ is a normal subgroup of $G_{i-1}$ with prime index $p$ and if $\tilde{G
 >So in this case, nothing changes.
 >
 >Case 2: The intersection drops by the prime $p=2$
->Now choose $\tilde{G}=\left\{1, (12) \right\}$.
+>Now choose $\tilde{G}=\lbrace1, (12) \rbrace$.
 >This is a subgroup of $S_3$ containing the identity and the transposition $(12)$.
->First consider the intersection with $G_{i-1}=S_3$: $G_{i-1} \cap \tilde{G} = S_3 \cap \left\{1,(12) \right\} = \left\{1,(12)\right\}$.
+>First consider the intersection with $G_{i-1}=S_3$: $G_{i-1} \cap \tilde{G} = S_3 \cap \lbrace1,(12) \rbrace = \lbrace 1,(12)\rbrace$.
 >But $(12)$ is an odd permutation so it does not belong to $A_3$.
 >Therefore $G_i \cap \tilde{G} = A_3 \cap \{1,(12) \} = \{1\}$.
->So we have $G_i \cap \tilde{G} = \{ 1 \}$ while $G_{i-1} \cap \tilde{G} = \left\{1,(12)\right\}$.
->The index is $[G_{i-1} \cap \tilde{G}: G_i \cap \tilde{G}]=[\left\{1,(12)\right\}:{1}]=2$
+>So we have $G_i \cap \tilde{G} = \{ 1 \}$ while $G_{i-1} \cap \tilde{G} = \lbrace1,(12)\rbrace$.
+>The index is $[G_{i-1} \cap \tilde{G}: G_i \cap \tilde{G}]=[\lbrace1,(12)\rbrace:{1}]=2$
 >And $2=p$.
 >Thus $G_i \cap \tilde{G} \triangleleft G_{i-1} \cap \tilde{G}$ with index $2$, exactly as the lemma predicts.
 
