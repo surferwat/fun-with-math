@@ -148,13 +148,13 @@ If $U(X,r)=V(X,r)W(X,r)$ where $U,V,$ and $W$ are polynomials in two variables w
 #### Proposition III
 Let $G$ be the Galois group of $f(x)=0$ over $K$ and let $G'$ be a normal subgroup of $G$ of prime index $p$. Assume also that $K$ contains a primitive $p$th root of unity $\alpha$, that is, a solution of $\alpha^p = 1$ with $\alpha \ne 1$. Then there is an element $k$ of $K$ such that if $K' \supset K$ is the field obtained by adjoining a $p$th root of $k$ to $K$ then the Galois group of $f(x)=0$ over $K'$ is $G'$.
 
->Basic idea 
+>**Basic idea** 
 >If you can identify a normal subgroup $G'$ of the Galois group $G$ whose index is a prime number $p$, then you can shrink the Galois group from $G$ to exactly $G'$ by adjoining one suitable $p$th root to the base field. If there is a normal subgroup that is smaller by a factor of $p$, then we can find a $p$th root that causes exactly that reduction. This is an important idea behind solvability by radicals: we can progressively enlarge the field by adjoining roots, and each enlargement can correspond to removing a layer of the Galois group.
 >
 >**Example**
 >Take $f(x)=x^3-2$ over $K=\mathbb{Q}(\omega)$ where $\omega$ is a primitive cube root of unity: $\omega^3=1$, $\omega \ne 1$.
 >The roots are $a=\sqrt[3]{2}, b=\omega \sqrt[3]{2}, c= \omega^2\sqrt[3]{2}$.
->Over $K=\mathbb{Q}(\omega)$, the Galois group has three elements: $G=\{1, \sigma, \sigma^2 \}$, where, for example, $\sigma(a)=b \sigma(b)=c, \sigma(c)=a$
+>Over $K=\mathbb{Q}(\omega)$, the Galois group has three elements: $G=\left\{1, \sigma, \sigma^2 \right\}$, where, for example, $\sigma(a)=b \sigma(b)=c, \sigma(c)=a$
 >So $\vert G \vert = 3$.
 >Now consider the subgroup $G'=\left\{1 \right\}$.
 >This is a normal subgroup of $G$, and $[G:G'] = \frac{3}{1}=3$.
